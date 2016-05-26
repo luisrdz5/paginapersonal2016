@@ -52,3 +52,29 @@ body {
 	width: 800px;
 	margin: auto;	
 }
+.guitarra {
+	padding: 10 px;
+	margin-top: 10px;	
+	overflow: hidden;
+	border: 1px solid #1F313C;
+}
+.guitarra ol{
+	padding: 0;
+}
+/*.guitarras img {
+	float: right;
+}*/
+.derecha {
+	float: right;
+}
+.izquierda {
+	float: left;
+}
+.contenedor-guitarra-a{
+	padding-left: 20px;
+
+}
+.contenedor-guitarra-b{	
+	margin-left: 370px;
+
+}
