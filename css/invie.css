@@ -265,7 +265,26 @@ table , th, td {
     .contenedor-guitarra-b{
       position: static;
       margin:0;
-      
-    }
 
+    }
+}
+@media screen and (max-width: 650px){
+  .header {
+     text-align: center;      
+  }
+  .logotipo{
+    margin: 0px;    
+  }
+
+  .menu{
+    position: static;  
+    display: block;
+
+  }
+  .menu li:first-child {
+    margin: 0;    
+  }
+  .menu ul{
+    padding: 0;
+  }
 }
