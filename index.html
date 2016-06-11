@@ -39,7 +39,7 @@
 		<section id="guitarras" class="guitarras contenedor" ><!-- guitarras -->
 			<h2>Nuestras Guitarras </h2><!-- Titulo -->
 			<article class="guitarra">
-				<img class="derecha" src="images/invie-acustica.png" width="350"  alt="Guitarra Invie Acustica" />
+				<img class="derecha" data-src="images/invie-acustica.png" width="350"  alt="Guitarra Invie Acustica" />
 				<div class="contenedor-guitarra-a">
 					<h3 class="title-b"> Invie Acustica </h3>
 					<ol>
@@ -52,7 +52,7 @@
 
 			</article><!-- guitarra1 -->
 			<article class="guitarra b"> 
-				<img class="izquierda" src="images/invie-classic.png" width="350"  alt="Guitarra Invie Classic" />
+				<img class="izquierda" data-src="images/invie-classic.png" width="350"  alt="Guitarra Invie Classic" />
 				<div class="contenedor-guitarra-b">
 					<h3 class="title-b"> Invie Classic </h3>
 					<ol>
@@ -67,7 +67,7 @@
 		<footer class="footer">
 			<div class="contenedor">
 				<div class="contacto">
-					<img src="images/invie-white.png" alt="Logo Blanco" />
+					<img data-src="images/invie-white.png" alt="Logo Blanco" />
 					<a href="tel:+525556567890"><strong> Telefono </strong><span> 5556567890  </span></a> 
 					<a href="mailto:contacto@invie.com"><strong> Email </strong> contacto@invie.com </a>
 				</div>
@@ -118,6 +118,7 @@
 				</div>
 			</div>
 		</footer>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
 		<script type="text/javascript">
 			var consulta = window.matchMedia('(max-width: 500px)');
 			var $menu = document.getElementById('menu');
@@ -138,7 +139,10 @@
 			mediaQuery();
 
 
-
+			var bLazy = new Blazy({
+    			selector: 'img'
+			});
+		
 
 
 
