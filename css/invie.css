@@ -73,6 +73,7 @@ input:focus, textarea:focus{
 }
 
 .background{
+  background-color: #466173;
   background-image: url('../images/background.png');
   background-size: cover;
 }
@@ -282,7 +283,9 @@ table , th, td {
   left: 0;
   top: 0; 
   cursor: pointer;
+  color: white;
   z-index: 3;
+  display: none;
 }
 @media screen and (max-width: 800px){
     .titulo {
@@ -324,7 +327,15 @@ table , th, td {
     .contenedor-guitarra-a{
       padding: 0;
     
-  }
+    }
+    .tabla .contenedor{
+      overflow: auto;
+      border: 1px solid #273b47;
+    }
+    .tabla{
+      margin: 50px 20px;
+    }
+
 }
 
 @media screen and (max-width: 767px){
@@ -386,6 +397,9 @@ table , th, td {
   }
 }
 @media screen and (max-width: 500px){
+  .burguer-button{
+    display: block;
+  }
   .portada.contenedor {
     position: static;
 
@@ -437,6 +451,28 @@ table , th, td {
   }
   .title-b {
     font-size: 30px;
+  }
+
+}
+video{
+  width: 100%;
+}
+.video-responsive-contenedor{
+  position: relative;
+  padding-top: 56.4%;
+}
+.video-responsive-src {
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+  .background{
+    background-image: url('../images/background2x.png')
   }
 
 }
